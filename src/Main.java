@@ -20,7 +20,7 @@ public class Main {
 
         /* Collection types*/
         //Lists
-        ArrayList<String> arrayList = new ArrayList<>(); //Dynamic sized array
+        ArrayList<Integer> arrayList = new ArrayList<>(); //Dynamic sized array
         LinkedList<Integer> linkedList = new LinkedList<>(); // Doubly linked list, Insertion:O(1) Search:O(n) Deletion:O(1)
 
         //Sets - Holds UNIQUE elements
@@ -28,7 +28,13 @@ public class Main {
         TreeSet<Integer> treeSet = new TreeSet<>(); // A self-balancing Binary Search Tree. In-Order traversal when returning elements. O(log n) CRUD
 
         //Map
-        HashMap<String, Integer> hashMap = new HashMap<>(); // HashMap, allows duplicates O(1) CRUD
+        HashMap<String, Integer> hashMap = new HashMap<>(); // HashMap, allows duplicate values O(1) CRUD
         TreeMap<String, Integer> treeMap = new TreeMap<>(); // Seems to be a Binary Search Tree that has mappings in the node
+
+        //???
+        Stack<Integer> stack = new Stack<>(); //Most likely using a LinkedList under the hood. First in last out
+        Queue<String> queue = new PriorityQueue<>(); //Most likely using a LinkedList under the hood. First in first out
+
+        System.out.println();
     }
 }
